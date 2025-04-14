@@ -7,3 +7,10 @@
 3. npm install
 
 4. npm start
+
+
+## CMD ## 
+- 역슬래시 사용 ( \ )
+
+## Git Bash ## 
+- 기본 슬래시 사용 ( / ) 
