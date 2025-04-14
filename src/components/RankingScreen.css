@@ -1,0 +1,100 @@
+/* src/components/RankingScreen.css */
+
+/* 레트로 느낌 폰트 예시 */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+  background: radial-gradient(#333, #000); /* 어두운 배경 그라디언트 */
+  color: #fff;
+}
+
+/* 랭킹 화면 컨테이너 */
+.ranking-screen {
+  width: 80%;
+  max-width: 600px;
+  margin: 80px auto;
+  text-align: center;
+
+  /* 약간의 투명도 있는 배경 */
+  background-color: rgba(0, 0, 0, 0.7);
+
+  border: 3px solid #f5a623;
+  border-radius: 10px;
+  padding: 30px;
+
+  /* 살짝 Fade In 하는 애니메이션 */
+  animation: fadeIn 3s ease-in-out;
+
+  /* 네온 느낌의 박스쉐도우 */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* 상단 제목 */
+.ranking-title {
+  margin-bottom: 20px;
+}
+
+.ranking-title h1 {
+  font-size: 34px;
+  color: #f5a623;
+  text-shadow: 2px 2px 0px #000, 4px 4px 0px #f5a623;
+}
+
+/* 점수 목록 */
+.score-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 30px;
+  text-align: left;
+  width: 60%;
+}
+
+/* 각 점수 항목 스타일 */
+.score-list li {
+  font-size: 30px;
+  margin: 8px 0;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 75px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.score-list li:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* RESTART 버튼 */
+.restart-btn {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 35px; /* 폰트 크기는 자유롭게 조정 */
+  color: #fff;
+  background-color: #f5a623;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  /* 동일한 텍스트 쉐도우 효과 적용 */
+  text-shadow: 4px 4px 0px #000, 4px 4px 0px #ffa54a;
+  transition: 0.3s;
+}
+
+.restart-btn:hover {
+  background-color: #ffa54a;
+  box-shadow: 0 0 10px #ffa54a;
+}
+
+/* Fade-in keyframe */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
